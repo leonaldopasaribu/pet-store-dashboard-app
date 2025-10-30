@@ -91,7 +91,7 @@ For complete API documentation, visit: [https://petstore3.swagger.io/](https://p
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Leonaldo Pasaribu**
 - GitHub: [@leonaldopasaribu](https://github.com/leonaldopasaribu)
 - LinkedIn: [Leonaldo Pasaribu](https://linkedin.com/in/leonaldo-pasaribu)
 
