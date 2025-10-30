@@ -28,7 +28,8 @@ A modern, responsive CRUD dashboard application for managing pet store inventory
 <img width="577" alt="Modal dialog for creating and updating pet information" src="https://github.com/user-attachments/assets/32506ff2-506b-48b3-b72b-b45a8eb651ee" />
 
 ### Delete Confirmation
-<img width="577" alt="Confirmation dialog before deleting a pet" src="https://github.com/user-attachments/assets/pet-delete-dialog.png" />
+<img width="423" height="237" alt="Screenshot 2025-10-30 at 10 46 21" src="https://github.com/user-attachments/assets/adf97305-856e-4fcc-b574-38b99208c117" />
+
 
 ## 🚀 Getting Started
 
