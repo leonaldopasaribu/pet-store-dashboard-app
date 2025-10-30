@@ -1,73 +1,105 @@
-# React + TypeScript + Vite
+# 🐾 Pet Store Dashboard App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive CRUD dashboard application for managing pet store inventory. Built with **React**, **Vite**, **TypeScript**, and **Chakra UI**, powered by the PetStore API.
 
-Currently, two official plugins are available:
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Chakra UI](https://img.shields.io/badge/Chakra_UI-319795?logo=chakra-ui&logoColor=white)](https://chakra-ui.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
 
-## React Compiler
+- **Frontend Framework:** React 18
+- **Build Tool:** Vite
+- **Language:** TypeScript
+- **UI Library:** Chakra UI
+- **Package Manager:** pnpm
+- **API:** [PetStore API v3](https://petstore3.swagger.io/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Screenshots
 
-## Expanding the ESLint configuration
+### Dashboard Overview
+<img width="1465" alt="Dashboard showing pet store statistics and overview" src="https://github.com/user-attachments/assets/7428af40-90b1-404b-be49-c6ad43b3f7e0" />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Pet List Management
+<img width="1470" alt="Pet list page with search and filter capabilities" src="https://github.com/user-attachments/assets/1a155fda-bb81-4281-9c30-cd4bdde6b65d" />
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Create/Update Pet Dialog
+<img width="577" alt="Modal dialog for creating and updating pet information" src="https://github.com/user-attachments/assets/32506ff2-506b-48b3-b72b-b45a8eb651ee" />
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Delete Confirmation
+<img width="577" alt="Confirmation dialog before deleting a pet" src="https://github.com/user-attachments/assets/pet-delete-dialog.png" />
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+- **Node.js** (v18 or higher)
+- **pnpm** (v8 or higher)
+
+If you don't have pnpm installed, you can install it globally:
+```bash
+npm install -g pnpm
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/pet-store-dashboard.git
+cd pet-store-dashboard
 ```
+
+2. Install dependencies:
+```bash
+pnpm install
+```
+
+3. Start the development server:
+```bash
+pnpm run dev
+```
+
+## 📜 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `pnpm install` | Install all project dependencies |
+| `pnpm run dev` | Start development server with hot reload |
+| `pnpm run build` | Build the app for production |
+| `pnpm run preview` | Preview production build locally |
+| `pnpm run test` | Run test suite |
+| `pnpm run lint` | Lint and check code quality |
+
+## 🔌 API Reference
+
+This application uses the **PetStore API v3** for all backend operations.
+
+**Base URL:** `https://petstore3.swagger.io/api/v3`
+
+### Main Endpoints Used
+
+- `GET /pet/findByStatus` - Fetch pets by status
+- `GET /pet/{petId}` - Get pet details by ID
+- `POST /pet` - Create a new pet
+- `PUT /pet` - Update an existing pet
+- `DELETE /pet/{petId}` - Delete a pet
+
+For complete API documentation, visit: [https://petstore3.swagger.io/](https://petstore3.swagger.io/)
+
+## 👨‍💻 Author
+
+**Your Name**
+- GitHub: [@leonaldopasaribu](https://github.com/leonaldopasaribu)
+- LinkedIn: [Leonaldo Pasaribu](https://linkedin.com/in/leonaldo-pasaribu)
+
+## 🙏 Acknowledgments
+
+- [PetStore API](https://petstore3.swagger.io/) for providing the backend API
+- [Chakra UI](https://chakra-ui.com/) for the beautiful component library
+- [Vite](https://vitejs.dev/) for the blazing fast build tool
+
+---
+
+⭐ **Star this repo if you find it helpful!**
